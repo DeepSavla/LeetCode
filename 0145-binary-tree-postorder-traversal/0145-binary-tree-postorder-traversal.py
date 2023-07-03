@@ -12,12 +12,10 @@ class Solution(object):
         """
         res=[]
         def post(node):
-            if root == None:
+            if not node:
                 return
-            if node.left != None:
-                post(node.left)
-            if node.right != None:
-                post(node.right)
+            post(node.left)
+            post(node.right)
             res.append(node.val)
         post(root)
         return res
