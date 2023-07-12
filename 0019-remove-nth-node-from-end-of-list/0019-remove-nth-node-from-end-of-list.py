@@ -23,7 +23,6 @@ class Solution(object):
         if delEle ==0:
             head = head.next
         for i in range(1,delEle):
-            print("for entered")
             current = current.next
         if current.next.next == None:
             current.next = None
