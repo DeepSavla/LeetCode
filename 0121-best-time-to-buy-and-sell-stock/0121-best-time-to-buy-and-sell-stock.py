@@ -15,6 +15,7 @@ class Solution(object):
         i=0
         j=1
         while j<len(prices):
+        
             if  prices[i] < prices[j]:
                 maxDiff = max(maxDiff, prices[j]-prices[i])
             else:
@@ -26,9 +27,8 @@ class Solution(object):
         right = 1 #Sell
         max_profit = 0
         while right < len(prices):
-            currentProfit = prices[right] - prices[left] #our current Profit
             if prices[left] < prices[right]:
-                max_profit =max(currentProfit,max_profit)
+                max_profit =max(prices[right] - prices[left],max_profit)
             else:
                 left = right
             right += 1
