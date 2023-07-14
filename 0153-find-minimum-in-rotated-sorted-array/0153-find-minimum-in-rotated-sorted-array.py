@@ -12,7 +12,9 @@ class Solution(object):
                 start=mid+1
             else:
                 end=mid
-        return nums[end]
+        print(nums[start])
+        print(nums[end])
+        return nums[start]
                 
                 
         
