@@ -12,8 +12,6 @@ class Solution(object):
                 start=mid+1
             else:
                 end=mid
-        print(nums[start])
-        print(nums[end])
         return nums[start]
                 
                 
