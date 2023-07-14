@@ -4,19 +4,10 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        """
-        TLE - Brute force:
-        
-        dict={}
-        for num in nums:
-            if num in dict.keys():
+        s=set()
+        for i in range(len(nums)):
+            if nums[i] in s:
                 return True
             else:
-               dict[num] = 0
-        """
-        nums.sort()
-        for i in range(len(nums)-1):
-            if nums[i]==nums[i+1]:
-                return True
+                s.add(nums[i])
         return False
-        
