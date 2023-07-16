@@ -25,7 +25,6 @@ class Solution(object):
             else:
                 right=mid-1
         pivot=left
-        print(pivot)
         left=0
         right = len(nums)-1
         if nums[pivot]<=target<=nums[right]:
