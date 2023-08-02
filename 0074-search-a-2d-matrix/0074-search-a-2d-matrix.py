@@ -19,7 +19,6 @@ class Solution(object):
             else:
                 end=mid-1
         row=mid
-        print(row)
         
         start=0
         end=len(matrix[row])-1
