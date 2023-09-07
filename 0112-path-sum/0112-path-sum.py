@@ -10,7 +10,6 @@ class Solution:
             if root==None:
                 return
             sum = sum+root.val 
-            print(sum)
             if sum == targetSum and root.left == None and root.right==None:
                 return True
             return pathTotal(root.left,sum) or pathTotal(root.right,sum)
