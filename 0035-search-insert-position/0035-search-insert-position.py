@@ -9,8 +9,6 @@ class Solution(object):
         end = len(nums)-1
         if target>nums[end]:
             return end+1
-        if target<nums[start]:
-            return start
         while start<=end:
             mid = (start+end)/2
             if nums[mid] == target:
