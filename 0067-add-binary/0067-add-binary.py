@@ -27,6 +27,7 @@ class Solution(object):
             if res ==3:
                 res=1
                 carry =1
+
             resArr.append(str(res))
             i=i-1
             j=j-1
