@@ -6,7 +6,6 @@ class Solution:
                 hm[char] = hm[char] +1
             else:
                 hm[char] = 1
-        
         for char in ransomNote:
             if char in hm.keys():
                 if hm[char] ==1:
