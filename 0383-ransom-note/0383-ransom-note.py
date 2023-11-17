@@ -1,7 +1,6 @@
 class Solution(object):
     def canConstruct(self, ransomNote, magazine):
         hm = {}
-        
         for char in magazine:
             if char in hm.keys():
                 hm[char] = hm[char] +1
