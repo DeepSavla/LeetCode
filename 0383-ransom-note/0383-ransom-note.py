@@ -15,4 +15,5 @@ class Solution(object):
                     hm[char] = hm[char]-1
             else:
                 return False
+            
         return True
