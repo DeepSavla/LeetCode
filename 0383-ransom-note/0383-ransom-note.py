@@ -12,7 +12,6 @@ class Solution:
                     del hm[char]
                 else:
                     hm[char] = hm[char]-1
-                    
             else:
                 return False
         return True
