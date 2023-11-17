@@ -15,8 +15,7 @@ class Solution:
                         sum = nums[i]+nums[j]
             else:
                 if  sum >= target:
-                    curMinLength = j-i+1
-                    MinLen = min(MinLen , curMinLength)
+                    MinLen = min(MinLen , j-i+1)
                     sum = sum - nums[i]
                     i=i+1
                 else:
