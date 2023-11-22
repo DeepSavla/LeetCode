@@ -13,7 +13,7 @@ class Solution(object):
             else:
                 numSubRev[a] = 1
         for k in numSubRev.keys():
-            sum = sum + (numSubRev[k] * (numSubRev[k]-1))/2
+            sum = sum + (numSubRev[k] * (numSubRev[k]-1))//2
         return sum % (pow(10,9) + 7)
             
             
