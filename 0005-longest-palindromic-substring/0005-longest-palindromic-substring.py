@@ -5,6 +5,7 @@ class Solution(object):
         :rtype: str
         """
         resString = s[0]
+        
         def expand(i,j):
             while i>=0 and j<len(s) and s[i] == s[j]:
                 i = i-1
