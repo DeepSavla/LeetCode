@@ -4,7 +4,6 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-import math
 class Solution:
     def minDepth(self, root: Optional[TreeNode]) -> int:
         if root == None:
