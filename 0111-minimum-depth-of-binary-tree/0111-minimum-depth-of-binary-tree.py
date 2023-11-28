@@ -19,5 +19,4 @@ class Solution:
         else:
             lh= self.minDepth(root.left)
             rh= self.minDepth(root.right)
-            
         return min(lh,rh)+1
