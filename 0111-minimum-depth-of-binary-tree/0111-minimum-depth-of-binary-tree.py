@@ -22,6 +22,8 @@
 #             rh= self.minDepth(root.right)
 #         return min(lh,rh)+1
 
+
+#approach 2
 class Solution:
     def minDepth(self, root: Optional[TreeNode]) -> int:
         if root == None:
