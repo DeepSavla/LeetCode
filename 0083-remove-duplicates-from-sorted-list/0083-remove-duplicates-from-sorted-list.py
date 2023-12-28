@@ -11,6 +11,7 @@ class Solution(object):
         """
         if head == None:
             return head
+        
         current = head
         while current.next!=None:
             if current.val == current.next.val:
