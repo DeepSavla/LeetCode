@@ -6,11 +6,9 @@ class Solution:
         j=1
         i=0
         while j<len(nums):
-            if nums[j]==0:
+            if nums[j]==0 or i==j:
                 j=j+1
             else:
-                if i==j:
-                    j=j+1
                 if nums[i] == 0:
                     temp=nums[i]
                     nums[i]=nums[j]
