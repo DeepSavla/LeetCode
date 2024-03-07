@@ -5,7 +5,7 @@ class Solution:
         """
         j=1
         i=0
-        while j<len(nums):
+        while j < len(nums):
             if nums[j]==0 or i==j:
                 j=j+1
             else:
