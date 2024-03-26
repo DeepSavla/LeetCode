@@ -26,7 +26,7 @@ class Solution:
         while hours>h:
             mid=mid+1
             hours = self.returnHours(piles, mid)
-        if hours<h and self.returnHours(piles, mid-1)<h and mid>1:
+        while hours<h and self.returnHours(piles, mid-1)<h and mid>1:
             mid = mid-1
             hours = self.returnHours(piles, mid)
         return mid
