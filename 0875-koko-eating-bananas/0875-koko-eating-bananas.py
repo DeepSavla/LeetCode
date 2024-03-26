@@ -27,10 +27,9 @@ class Solution:
                 high=mid-1
             if hours > h:
                 low=mid+1
-        if hours>h:
-            while hours>h:
-                mid=mid+1
-                hours = self.returnHours(piles, mid)
+        while hours>h:
+            mid=mid+1
+            hours = self.returnHours(piles, mid)
         while hours<h and self.returnHours(piles, mid-1)<h and mid>1:
             mid = mid-1
             hours = self.returnHours(piles, mid)
