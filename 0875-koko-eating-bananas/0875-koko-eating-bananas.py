@@ -8,14 +8,10 @@ class Solution:
         return hours
             
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        max=0
-        for dig in piles:
-            if dig>max:
-                max=dig
+        high=max(piles)
         if h==len(piles):
-            return max
+            return high
         low=1
-        high=max
         while low<high:
             mid = (high + low) // 2
             hours = self.returnHours(piles, mid)
