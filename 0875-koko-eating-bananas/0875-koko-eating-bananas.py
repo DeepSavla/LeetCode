@@ -2,9 +2,8 @@ import math
 class Solution:
     def returnHours(self, piles, mid):
         hours=0
-        if mid>0:
-            for p in piles:
-                hours = hours + math.ceil(p/mid)
+        for p in piles:
+            hours = hours + math.ceil(p/mid)
         return hours
             
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
@@ -15,11 +14,7 @@ class Solution:
         while low<high:
             mid = (high + low) // 2
             hours = self.returnHours(piles, mid)
-            if hours == h:
-                while self.returnHours(piles, mid-1) == h:
-                    mid=mid-1
-                return mid
-            if hours < h:
+            if hours <= h:
                 high=mid
             if hours > h:
                 low=mid+1
