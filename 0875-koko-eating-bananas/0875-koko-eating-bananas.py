@@ -8,14 +8,17 @@ class Solution:
             
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         high=max(piles)
+        low=1
+        rate=high
         if h==len(piles):
             return high
-        low=1
-        while low<high:
-            mid = (high + low) // 2
-            hours = self.returnHours(piles, mid)
-            if hours <= h:
-                high=mid
-            if hours > h:
+        while low<=high:
+            mid = (low+high)//2
+            if self.returnHours(piles,mid)<=h:
+                high=mid-1
+                rate = min(rate, mid)
+            else:
                 low=mid+1
-        return high
+        return rate
+            
+        
