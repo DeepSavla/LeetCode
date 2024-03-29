@@ -10,9 +10,8 @@ class Solution:
                 j=j+1
             else:
                 if nums[i] == 0:    #swap and increment i and j
-                    temp=nums[i]
                     nums[i]=nums[j]
-                    nums[j]=temp
+                    nums[j]=0
                     j=j+1
                 i=i+1
             
