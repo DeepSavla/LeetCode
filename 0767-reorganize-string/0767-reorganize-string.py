@@ -18,7 +18,7 @@ class Solution:
                 currChar = maxFreq[1]
             else:
                 currChar = maxFreq[0]
-            resStr += currChar
+            resStr = resStr + currChar
             prevChar = currChar
             if hm[currChar] > 1:
                 hm[currChar] = hm[currChar]-1
