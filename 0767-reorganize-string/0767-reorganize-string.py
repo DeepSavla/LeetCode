@@ -13,14 +13,6 @@ class Solution:
             maxFreq = heapq.nlargest(2,hm.keys(),key=hm.get)
             if len(hm)==1 and hm[maxFreq[0]]>1: #for null string case
                 return ""
-            # if len(resArr) == 0:
-            #     resArr.append(maxFreq[0])
-            #     prevChar = maxFreq[0]       #storing last used char so not used again
-            #     if hm[maxFreq[0]] > 1:
-            #         hm[maxFreq[0]] = hm[maxFreq[0]]-1
-            #     else:
-            #         del hm[maxFreq[0]]
-            #     continue    #imp
             if prevChar == None:
                 currChar = maxFreq[0]
             else:
