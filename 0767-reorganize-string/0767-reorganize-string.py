@@ -1,4 +1,3 @@
-import heapq
 class Solution:
     def reorganizeString(self, s: str) -> str:
         hm = {}
