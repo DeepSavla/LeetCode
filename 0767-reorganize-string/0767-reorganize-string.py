@@ -13,13 +13,10 @@ class Solution:
             maxFreq = heapq.nlargest(2,hm.keys(),key=hm.get)
             if len(hm)==1 and hm[maxFreq[0]]>1: #for null string case
                 return ""
-            if prevChar == None:    #for first case
-                currChar = maxFreq[0]
+            if maxFreq[0] == prevChar and prevChar !=None: #none for first case
+                currChar = maxFreq[1]
             else:
-                if maxFreq[0] == prevChar:
-                    currChar = maxFreq[1]
-                else:
-                    currChar = maxFreq[0]
+                currChar = maxFreq[0]
             resStr = resStr + currChar
             prevChar = currChar
             if hm[currChar] > 1:
