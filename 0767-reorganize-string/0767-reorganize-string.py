@@ -7,6 +7,7 @@ class Solution:
                 hm[letter]=1
             else:
                 hm[letter] = hm[letter] +1
+                
         resStr= ""
         prevChar = None
         while len(hm) > 0:
