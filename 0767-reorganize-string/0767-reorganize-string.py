@@ -14,23 +14,22 @@ class Solution:
                 return ""
             if len(resArr) == 0:
                 resArr.append(maxFreq[0])
+                prevChar = maxFreq[0]
                 if hm[maxFreq[0]] > 1:
                     hm[maxFreq[0]] = hm[maxFreq[0]]-1
                 else:
                     del hm[maxFreq[0]]
                 continue    #imp
-            if maxFreq[0] == resArr[-1]:
-                resArr.append(maxFreq[1])
-                if hm[maxFreq[1]] > 1:
-                    hm[maxFreq[1]] = hm[maxFreq[1]]-1
-                else:
-                    del hm[maxFreq[1]]
+            if maxFreq[0] == prevChar:
+                currChar = maxFreq[1]
             else:
-                resArr.append(maxFreq[0])
-                if hm[maxFreq[0]] > 1:
-                    hm[maxFreq[0]] = hm[maxFreq[0]]-1
-                else:
-                    del hm[maxFreq[0]]
+                currChar = maxFreq[0]
+            resArr.append(currChar)
+            prevChar = currChar
+            if hm[currChar] > 1:
+                hm[currChar] = hm[currChar]-1
+            else:
+                del hm[currChar]
         resStr =""
         resStr = resStr.join(resArr)
         return resStr
