@@ -7,7 +7,7 @@ class Solution:
                 hm[letter]=1
             else:
                 hm[letter] = hm[letter] +1
-        resArr=[]
+        resStr= ""
         prevChar = None
         while len(hm) > 0:
             maxFreq = heapq.nlargest(2,hm.keys(),key=hm.get)
@@ -20,12 +20,10 @@ class Solution:
                     currChar = maxFreq[1]
                 else:
                     currChar = maxFreq[0]
-            resArr.append(currChar)
+            resStr = resStr + currChar
             prevChar = currChar
             if hm[currChar] > 1:
                 hm[currChar] = hm[currChar]-1
             else:
                 del hm[currChar]
-        resStr =""
-        resStr = resStr.join(resArr)
         return resStr
