@@ -1,21 +1,21 @@
 class Solution:
-    def timeTaken(self, speed, piles):
-        time = 0
-        for i in range(len(piles)):
-            time = time + ceil(piles[i]/speed)
-        return time
-    
+    def returnHours(self, piles, mid):
+        hours=0
+        for p in piles:
+            hours = hours + math.ceil(p/mid)
+        return hours
+            
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        i = 1
-        j = max(piles)
-        minInteger = j
-        while i<=j:
-            mid = (i+j)//2
-            time = self.timeTaken(mid,piles)
-            if time <= h:
-                minInteger = min(mid, minInteger)
-                j=mid-1
+        high=max(piles)
+        low=1
+        rate=high
+        if h==len(piles):
+            return high
+        while low<=high:
+            mid = (low+high)//2
+            if self.returnHours(piles,mid)<=h:
+                high=mid-1
+                rate = min(rate, mid)
             else:
-                i=mid+1
-        return minInteger
-        
+                low=mid+1
+        return rate
