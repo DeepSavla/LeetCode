@@ -13,6 +13,9 @@ class Solution:
             sum += nums[j]
             if (sum - k) in hm:
                 totalArr += hm[sum - k]
-            hm[sum] = hm.get(sum, 0) + 1
+            if sum in hm:
+                hm[sum]=hm[sum]+1
+            else:
+                hm[sum]=1
         return totalArr
             
