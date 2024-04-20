@@ -21,5 +21,5 @@ class Solution:
                     row = row-1
                 else:
                     row = row=row+1
-        # resList = ['PAHN', 'APLSIIG', 'YIR']
+        # resList = ['PAHN', 'APLSIIG', 'YIR']   we use join to join it
         return "".join(resList)
