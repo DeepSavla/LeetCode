@@ -3,7 +3,7 @@ class MinStack:
     def __init__(self):
         self.minStack = []
 
-    def push(self, val: int) -> None:
+    def push(self, val: int) -> None:  #adding array for each element where first value is stack top and second value is minimum till that point.
         if self.minStack == []:
             self.minStack.append([val,val])
         else:
