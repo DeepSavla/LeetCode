@@ -16,6 +16,7 @@ class Solution:
             adj[edge[0]].append(edge[1])
             adj[edge[1]].append(edge[0])
         #adj created
+        #running DFS on sach node of graph if not visited
         for i in range(len(adj)):
             if visited[i] == False:
                 components +=1
