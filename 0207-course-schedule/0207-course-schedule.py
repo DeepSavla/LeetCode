@@ -10,7 +10,7 @@ class Solution:
             for j in i:
                 indegree[j] += 1
         q= deque()
-        print(indegree)
+        # till now first created adjMatrix followed by indegree of nodes
         for i in range(len(indegree)):
             if indegree[i] == 0:
                 q.append(i)
@@ -19,7 +19,6 @@ class Solution:
         countQNodes = 0         #for cycle
         while len(q)!=0:
             s = q.popleft()
-            print(s)
             for n in adjMat[s]:
                 indegree[n] -= 1
                 if indegree[n] == 0:
