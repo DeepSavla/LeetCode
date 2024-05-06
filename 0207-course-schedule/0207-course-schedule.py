@@ -9,8 +9,8 @@ class Solution:
         for i in adjMat:
             for j in i:
                 indegree[j] += 1
-        q= deque()
         # till now first created adjMatrix followed by indegree of nodes
+        q= deque()
         for i in range(len(indegree)):
             if indegree[i] == 0:
                 q.append(i)
