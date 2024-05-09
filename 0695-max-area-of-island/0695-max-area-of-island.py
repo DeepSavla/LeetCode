@@ -4,6 +4,7 @@ class Solution:
         q = deque()
         area = 0
         directions = [[0,1],[0,-1],[1,0],[-1,0]]
+        # find all 1 in matrix that are not visited and perform BFS in its 4 directions
         for i in range(len(grid)):
             for j in range(len(grid[i])):
                 curArea = 0
