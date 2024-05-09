@@ -1,14 +1,11 @@
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
-        """
-        Do not return anything, modify matrix in-place instead.
-        """
         top = 0
         bottom = len(matrix)-1
         while top<=bottom:
             left = top
             right = bottom
-            for i in range(right-left):
+            for i in range(right-left): #
                 temp = matrix[top][left+i]
                 matrix[top][left+i] = matrix[bottom-i][left]
                 matrix[bottom-i][left]= matrix[bottom][right-i]
