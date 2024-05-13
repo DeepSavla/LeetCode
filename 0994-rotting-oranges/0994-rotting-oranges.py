@@ -16,7 +16,7 @@ class Solution:
             freshFound = False
             iterations = count
             count = 0
-            for c in range(iterations):
+            for c in range(iterations): #to check iteration all rotten oranges
                 s = q.popleft()
                 for index in neighbors:
                     x = index[0]+s[0]
@@ -27,7 +27,7 @@ class Solution:
                         count+=1
                         freshFound = True
                         visited.add((x,y))
-            if freshFound:
+            if freshFound: #checking if there was any fresh in neighbors
                 minutes+=1
         for i in range(rows):
             for j in range(columns):
