@@ -3,7 +3,7 @@ class Solution:
         visited = set()
         q = deque()
         fresh = 0
-        rotted = 0
+        rotten = 0
         minutes = 0
         count=0
         rows = len(grid)
@@ -28,13 +28,13 @@ class Solution:
                     if (x in range(rows) and y in range(columns)) and (x,y) not in visited and grid[x][y]==1:
                         q.append([x,y])
                         grid[x][y]=2
-                        rotted +=1
+                        rotten +=1
                         count+=1
                         freshFound = True
                         visited.add((x,y))
             if freshFound: #checking if there was any fresh in neighbors
                 minutes+=1
-        if fresh == rotted:
+        if fresh == rotten:
             return minutes
         return -1
         
