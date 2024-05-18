@@ -2,7 +2,7 @@ class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         rows = len(matrix)
         columns = len(matrix[0])
-        directions = {0:[0,1],1:[1,0],2:[0,-1],3:[-1,0]}
+        directions = {0:[0,1],1:[1,0],2:[0,-1],3:[-1,0]}# 0 means right, 1 means down, 2 means left and 3 means top i.e. in order of spirals
         direction = 0
         visited = set()
         cell = [0,0]
