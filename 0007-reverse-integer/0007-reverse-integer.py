@@ -9,11 +9,13 @@ class Solution(object):
             x=x*-1
         else:
             negative = False
-        x=str(x)
-        x= x[::-1]
-        x= int(x)
+        res = 0
+        while x>0:
+            dig = x%10
+            x = x//10
+            res = res*10 +dig
         if negative:
-            x=x*-1
-        if  -2147483648 <= x <  2147483648:
-            return x
+            res=res*-1
+        if  -2147483648 <= res <  2147483648:
+            return res
         return 0
