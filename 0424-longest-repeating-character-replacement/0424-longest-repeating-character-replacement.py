@@ -13,7 +13,7 @@ class Solution:
         j=0
         maxLen = 1
         while j<len(s)-1:
-            if j-i+1-maxCount(hm)<=k and j<len(s)-1:
+            if j-i+1-maxCount(hm)<=k:
                 j=j+1
                 if s[j] in hm:
                     hm[s[j]] +=1
