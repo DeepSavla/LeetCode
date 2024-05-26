@@ -1,3 +1,4 @@
+# https://www.youtube.com/watch?v=gqXU1UyA8pk&t=431s
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         def maxCount(hm):
