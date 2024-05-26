@@ -19,8 +19,6 @@ class Solution:
                 else:
                     hm[s[j]] =1
             else:
-                print(hm)
-                print(i,j)
                 if hm[s[i]]==1:
                     del hm[s[i]]
                 else:
