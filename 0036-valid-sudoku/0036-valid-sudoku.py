@@ -1,8 +1,9 @@
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
+        #High level Algo:
         #one for loop to check row set:
         #one for loop to check column set
-        #then check 3x3 smaller squares
+        #then check 3x3 smaller squares (tricky to check the 3x3 boxed and how they are calculated)
         
         boxes = []  #creating nins sets for each boxes
         for i in range(9):  #making 9 empty sets in an array for every 3x3 box; smaller squares are denoted 0-8 index where 0-2 are of first row, 3-5 are second row and 6-8 are third row
