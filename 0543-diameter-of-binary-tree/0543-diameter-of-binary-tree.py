@@ -16,7 +16,6 @@ class Solution:
             left = maxHeight(node.left)
             right = maxHeight(node.right) 
             d = max(d , left+right)
-            print(d)
             return max(left,right)+1
         
         maxHeight(root)
