@@ -8,8 +8,9 @@ class Solution:
         count = 0
         for i in range(3,n+1):
             newStr=""
-            for j in range(len(curStr)):
-                if j!=len(curStr)-1 and curStr[j] == curStr[j+1]:
+            lenCurStr = len(curStr)
+            for j in range(lenCurStr):
+                if j!=lenCurStr-1 and curStr[j] == curStr[j+1]:
                     count+=1
                 else:
                     count+=1
