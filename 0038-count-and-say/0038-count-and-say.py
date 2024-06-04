@@ -16,7 +16,7 @@ class Solution:
                     newStr = newStr + str(count) + curStr[j]
                     count = 0
             curStr = newStr
-        return str(curStr)
+        return curStr
                 
             
         
