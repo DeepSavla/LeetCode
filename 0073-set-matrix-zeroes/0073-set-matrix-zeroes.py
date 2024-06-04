@@ -13,9 +13,9 @@ class Solution:
         while len(targetCells)!=0:
             curCell =  targetCells.popleft()
             for i in range(rows):
-                for j in range(columns):
-                    matrix[i][curCell[1]] = 0
-                    matrix[curCell[0]][j] = 0
+                matrix[i][curCell[1]] = 0
+            for j in range(columns):
+                matrix[curCell[0]][j] = 0
         
                     
         
