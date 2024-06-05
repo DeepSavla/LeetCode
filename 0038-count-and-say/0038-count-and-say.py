@@ -2,11 +2,9 @@ class Solution:
     def countAndSay(self, n: int) -> str:
         if n==1:
             return "1"
-        if n==2:
-            return "11"
-        curStr = "11"
+        curStr = "1"
         count = 0
-        for i in range(3,n+1):
+        for i in range(2,n+1):
             newStr=""
             lenCurStr = len(curStr)
             for j in range(lenCurStr):
