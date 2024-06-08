@@ -13,17 +13,12 @@ class TimeMap:
         if key not in self.hm.keys():
             return ""
         arr = self.hm[key]
-        i=0
-        j=len(arr)-1
-        mid=0
+        i=len(arr)-1
         res = ""
-        while i<=j:
-            mid = (i+j)//2
-            if arr[mid][0]<=timestamp:
-                res = arr[mid][1]
-                i=mid+1
-            else:
-                j=mid-1
+        while i>=0 and arr[i][0]>timestamp:
+            i=i-1
+        if arr[i][0]<=timestamp:
+            res = arr[i][1]
         return res
         
         
