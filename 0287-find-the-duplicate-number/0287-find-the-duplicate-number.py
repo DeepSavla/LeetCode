@@ -1,10 +1,14 @@
-class Solution(object):
-    def findDuplicate(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        nums.sort()
-        for i in range(1,len(nums)):
-            if nums[i] == nums[i-1]:
-                return nums[i]
+class Solution:
+    def findDuplicate(self, nums: List[int]) -> int:
+        sp = nums[0]
+        fp = nums[0]
+        while 1:
+            sp = nums[sp]
+            fp = nums[nums[fp]]
+            if sp==fp:
+                break
+        newPtr = nums[0]
+        while newPtr!=sp:
+            sp = nums[sp]
+            newPtr = nums[newPtr]
+        return sp
