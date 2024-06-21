@@ -8,14 +8,17 @@ class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if head ==None:
             return None
-        s = set()
-        curr = head
-        while curr!=None:
-            setSize = len(s)
-            s.add(curr)
-            if setSize == len(s):
-                return curr
-            curr = curr.next
+        slow = head
+        fast = head
+        while fast.next!=None and fast.next.next!=None:
+            slow = slow.next
+            fast = fast.next.next
+            if slow==fast:
+                newPointer = head
+                while newPointer !=slow:
+                    newPointer = newPointer.next
+                    slow = slow.next
+                return slow
         return None
             
             
