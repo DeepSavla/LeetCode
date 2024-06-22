@@ -4,8 +4,8 @@ class Solution:
         minRemove = 0
         end = intervals[0][1]
         for i in range(1,len(intervals)):
-            if intervals[i][0]>=end:
-                end = intervals[i][1]
-            else:
+            if intervals[i][0]<end:
                 minRemove+=1
+            else:
+                end = intervals[i][1]
         return minRemove
