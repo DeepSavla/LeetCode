@@ -4,9 +4,12 @@ class Solution:
         arr =[]
         heapq.heapify(arr)
         for n in nums:
-            heapq.heappush(arr,n)
-            if len(arr)>k:
-                heapq.heappop(arr)
+            if len(arr)<k:
+                heapq.heappush(arr,n)
+            else:
+                if arr[0] < n:
+                    heapq.heappop(arr)
+                    heapq.heappush(arr,n)
         return heapq.heappop(arr)
             
                 
