@@ -19,7 +19,7 @@ class Solution:
                         basket[fruits[i]] -= 1
                     i+=1
             if len(basket) <=2:
-                maxFruits = max(maxFruits, sum(basket.values()))
+                maxFruits = max(maxFruits, j-i)
         return maxFruits
                     
             
