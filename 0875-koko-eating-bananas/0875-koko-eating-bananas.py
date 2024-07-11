@@ -19,5 +19,4 @@ class Solution:
                     high=mid-1
                 else:
                     return mid
-                    break
                 
