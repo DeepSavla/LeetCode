@@ -1,21 +1,23 @@
 class Solution:
-    def returnHours(self, piles, mid):
-        hours=0
-        for p in piles:
-            hours = hours + math.ceil(p/mid)
-        return hours
-            
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        high=max(piles)
-        low=1
-        rate=high
+        def calculate(rate):
+            t = 0
+            for p in piles:
+                t = t+ ceil(p/rate)
+            return t
+    
         if h==len(piles):
-            return high
-        while low<=high:
+            return max(piles)
+        low=1
+        high=max(piles)
+        while 1:
             mid = (low+high)//2
-            if self.returnHours(piles,mid)<=h:
-                high=mid-1
-                rate = min(rate, mid)
+            if calculate(mid)>h:
+                low = mid+1
             else:
-                low=mid+1
-        return rate
+                if mid!=1 and calculate(mid-1)<=h:
+                    high=mid-1
+                else:
+                    return mid
+                    break
+                
