@@ -16,6 +16,7 @@ class Solution:
                 else:
                     if i!=parent:
                         return False
+            return True
         if dfs(0,-1) == False:
             return False
         for v in visited:
