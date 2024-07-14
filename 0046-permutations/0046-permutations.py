@@ -13,5 +13,4 @@ class Solution:
                 backtrack(curRes, remArr[:i:]+remArr[i+1::])
                 curRes.pop(-1)
         backtrack([],nums)
-        print(res)
         return res
