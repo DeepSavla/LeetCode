@@ -9,5 +9,4 @@ class Solution:
                 res = res-hm[s[i]]
             else:
                 res = res+hm[s[i]]
-        print(res)
         return res
