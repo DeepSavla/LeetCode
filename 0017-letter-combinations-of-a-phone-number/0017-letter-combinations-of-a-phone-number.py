@@ -5,6 +5,7 @@ class Solution:
         if digits =="":
             return res
         cur = ""
+        
         def backtrack(i,cur):
             if i==len(digits):
                 res.append(cur[:])
@@ -13,5 +14,6 @@ class Solution:
                 cur = cur + d
                 backtrack(i+1,cur)
                 cur = cur[:-1]
+                
         backtrack(0,cur)
         return res
