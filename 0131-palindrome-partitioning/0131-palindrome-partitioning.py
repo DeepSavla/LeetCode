@@ -13,5 +13,4 @@ class Solution:
                     backtrack(j+1,cur)
                     cur.pop()
         backtrack(0,cur)
-        print(res)
         return res
