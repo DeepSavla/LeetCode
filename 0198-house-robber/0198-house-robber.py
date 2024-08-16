@@ -7,6 +7,3 @@ class Solution:
                 prevMax = max(prevMax,total[j])
             total[i] = prevMax + nums[i]
         return max(total)
-                
-                
-        
