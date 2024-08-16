@@ -1,9 +1,9 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
         total = nums.copy()
-        for i in range(2,len(nums)):
-            prevMax=0
-            for j in range(i-1):
-                prevMax = max(prevMax,total[j])
-            total[i] = prevMax + nums[i]
+        if len(nums)>2:
+            total[2] = nums[2]+total[0]
+        for i in range(3,len(nums)):
+            total[i] = max(total[i-3],total[i-2])+nums[i]
+        print(total)
         return max(total)
