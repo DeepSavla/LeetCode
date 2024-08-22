@@ -1,11 +1,14 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
-        def getMaxTotal(arr):
+        def getMaxTotal(arr):   #helper function
             totalTillNow = arr.copy()
-            for i in range(1,len(arr)):
+            for i in range(2,len(arr)):
                 maxVal = 0
-                for j in range(i-1):
-                    maxVal = max(maxVal, totalTillNow[j])
+                previous1= totalTillNow[i-2]
+                prevoius2=0
+                if i-3>=0:
+                    prevoius2 = totalTillNow[i-3]
+                maxVal = max(previous1, prevoius2)
                 totalTillNow[i] = maxVal + arr[i]
             return max(totalTillNow)
         
