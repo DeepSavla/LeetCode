@@ -4,21 +4,30 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
-        resString = s[0]
-        
-        def expand(i,j):
-            while i>=0 and j<len(s) and s[i] == s[j]:
-                i = i-1
-                j=j+1
-            return s[i+1:j]
+        maxLen = 1
+        resStr = s[0]
+        n = len(s)
+        for i in range(n):
+            #checking odd length palindrome
+            left = i-1
+            right = i+1
+            while left>=0 and right<n and s[left]==s[right]:
+                if right-left+1>maxLen:
+                    maxLen = right-left+1
+                    resStr= s[left:right+1]
+                left-=1
+                right+=1
+            #checking even length palindrome
+            left=i-1
+            right=i
+            while left>=0 and right<n and s[left]==s[right]:
+                if right-left+1>maxLen:
+                    maxLen = right-left+1
+                    resStr= s[left:right+1]
+                left-=1
+                right+=1
+        return resStr
             
-        for i in range(len(s)):
-            evenString = expand(i,i+1)
-            if len(evenString)>len(resString):
-                resString = evenString
-            oddString = expand(i-1,i+1)
-            if len(oddString)>len(resString):
-                resString = oddString
-        return resString
+        
             
             
