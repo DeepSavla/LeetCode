@@ -13,27 +13,20 @@ class Codec:
         :type root: TreeNode
         :rtype: str
         """
-        if root == None:
-            return ""
         res = ""
+        if root == None:
+            return res
         q = deque()
         q.append(root)
-        while len(q)>0:
-            s = q.popleft()
-            if s!=None:
-                res = res + str(s.val) + ","
-                q.append(s.left)
-                q.append(s.right)
+        while q:
+            node = q.popleft()
+            if node !=None:
+                res += str(node.val) + ","
+                q.append(node.left)
+                q.append(node.right)
             else:
-                res = res +  "None,"
-        # j=len(res)-1
-        # while res[j]==None:
-        #     res.pop()
-        #     j=j-1
-        
-        return res[:len(res)-1]
-        
-            
+                res += "None,"
+        return res[:-1] #to avoid last comma
         
 
     def deserialize(self, data):
@@ -42,24 +35,28 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
-        if data == "":
+        if data =="":
             return []
-        data = data.split(",")
+        nodes = str.split(data,",")
         q = deque()
-        i=0
-        root = TreeNode(data[0])
+        root = TreeNode(nodes[0])
         q.append(root)
-        while i<len(data)-2:
-            s = q.popleft()
+        i=1
+        while q:
+            n = q.popleft()
+            if nodes[i]!="None":
+                n.left = TreeNode(nodes[i])
+                q.append(n.left)
             i+=1
-            if data[i] !="None":
-                s.left = TreeNode(data[i])
-                q.append(s.left)
+            if nodes[i]!="None":
+                n.right = TreeNode(nodes[i])
+                q.append(n.right)
             i+=1
-            if data[i] !="None":
-                s.right = TreeNode(data[i])
-                q.append(s.right)
         return root
+            
+            
+        
+        
 
 # Your Codec object will be instantiated and called as such:
 # ser = Codec()
