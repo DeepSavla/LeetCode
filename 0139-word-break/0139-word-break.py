@@ -8,8 +8,7 @@ class Solution:
                 if len(w)<=len(s)-i:
                     if w==s[i:i+len(w)]:
                         memo[i] = memo[i+len(w)]
-                if memo[i]==True:
+                if memo[i]==True: #if two matching words then break if any one is true
                     break
             i-=1
-        print(memo)
         return memo[0]
