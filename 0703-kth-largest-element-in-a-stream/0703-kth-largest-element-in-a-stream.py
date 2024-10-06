@@ -5,12 +5,7 @@ class KthLargest:
         self.size = k
         heapq.heapify(self.minheap)
         for n in nums:
-            if len(self.minheap) < self.size:
-                heapq.heappush(self.minheap, n)
-            else:
-                if n > self.minheap[0]:
-                    heapq.heappop(self.minheap)
-                    heapq.heappush(self.minheap,n)
+            self.add(n)
         
         
 
