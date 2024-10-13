@@ -1,26 +1,31 @@
 class MedianFinder(object):
 
     def __init__(self):
-        self.myStream = []
+        self.lowerHalf = [] #max-heap
+        self.upperHalf =[] #min-heap
+        heapq.heapify(self.lowerHalf)
+        heapq.heapify(self.upperHalf)
 
     def addNum(self, num):
         """
         :type num: int
         :rtype: None
         """
-        self.myStream.append(num)
+        heapq.heappush(self.lowerHalf,-num)
+        heapq.heappush(self.upperHalf, -heapq.heappop(self.lowerHalf))
+        
+        if len(self.lowerHalf) < len(self.upperHalf):
+            heapq.heappush(self.lowerHalf, -heapq.heappop(self.upperHalf))
         
 
     def findMedian(self):
         """
         :rtype: float
         """
-        self.myStream = sorted(self.myStream)
-        if len(self.myStream)%2==1:
-            return self.myStream[len(self.myStream)//2]
+        if len(self.lowerHalf)>len(self.upperHalf):
+            return self.lowerHalf[0] *-1
         else:
-            mid = len(self.myStream)//2
-            return float(self.myStream[mid] + self.myStream[mid-1])/2
+            return (-self.lowerHalf[0] + self.upperHalf[0]) / 2.0
         
 
 
