@@ -3,6 +3,11 @@
 #     def __init__(self, x):
 #         self.val = x
 #         self.next = None
+# intuition: the tail of both will be same
+# find lengths of both lists
+# skip start l1-l2 nodes of longer list
+# now check the nodes of both lists and increment both. 
+# The moment they are same is the intersection point
 
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
