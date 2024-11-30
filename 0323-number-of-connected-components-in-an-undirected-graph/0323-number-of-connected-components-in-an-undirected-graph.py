@@ -1,26 +1,25 @@
 class Solution:
+    def DFS(self, node, visited, adj):
+            visited[node] =True
+            for n in adj[node]:
+                if visited[n] == False:
+                    self.DFS(n,visited, adj)
+    
     def countComponents(self, n: int, edges: List[List[int]]) -> int:
         adj = []
         for i in range(n):
             adj.append([])
-        for e in edges:
-            adj[e[0]].append(e[1])
-            adj[e[1]].append(e[0])
-        visited = [False] * n
-        connectedComponents = 0
-        
-        def DFS(n, visited):
-            for node in adj[n]:
-                if visited[node] == False:
-                    visited[node] = True
-                    DFS(node,visited)
-        
-        for i in range(n):
+        for edge in edges:
+            adj[edge[0]].append(edge[1])
+            adj[edge[1]].append(edge[0])
+            
+        visited = [False]* n
+        components = 0
+        for i in range(len(adj)):
             if visited[i] == False:
-                connectedComponents +=1
-                visited[i] = True
-                DFS(i,visited)
-        return connectedComponents
+                components +=1
+                self.DFS(i,visited,adj)
+        return components
         
 '''
 - Using DFS
