@@ -11,8 +11,8 @@ class Solution:
             res +=1
         while r<len(arr)-1:
             r += 1
+            winTotal = winTotal + arr[r] - arr[l]
             l+=1
-            winTotal = winTotal + arr[r] - arr[l-1]
             print(winTotal)
             if winTotal >=reqTotal:
                 res+=1
