@@ -8,6 +8,7 @@ class Solution:
                     st.pop()
             else:
                 st.append(c)
+        print(st)
         return "".join(st)
             
         
