@@ -18,13 +18,11 @@ class Solution:
                 elif node != parent:
                     cycle = True
         DFS(0,-1)
-        for i in range(n):
-            if visited[i]==False:
+        for v in visited:
+            if v==False:
                 return False
-            
         if cycle:
             return False
         else:
             return True
-                
                 
