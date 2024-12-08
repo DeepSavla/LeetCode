@@ -25,18 +25,14 @@ class Solution:
                 for index in neighbors:
                     x = index[0]+s[0]
                     y = index[1]+s[1]
-                    if (x in range(rows) and y in range(columns)) and (x,y) not in visited and grid[x][y]==1:
+                    if (x in range(rows) and y in range(columns)) and grid[x][y]==1:
                         q.append([x,y])
                         grid[x][y]=2
                         rotten +=1
                         count+=1
                         freshFound = True
-                        visited.add((x,y))
             if freshFound: #checking if there was any fresh in neighbors
                 minutes+=1
         if fresh == rotten:
             return minutes
         return -1
-        
-                        
-                    
