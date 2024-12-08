@@ -1,11 +1,15 @@
 class Solution:
     def orangesRotting(self, grid: List[List[int]]) -> int:
-        visited = set()
-        q = deque()
-        fresh = 0
-        rotten = 0
+        q = deque() 
+        #to add all rotten whose neighbors hav not been traversed
+        fresh = 0 
+        #to keep a count of total fresh initially
+        rotten = 0 
+        #to track total rotten so that we can compare if all fresh have rotten or not
         minutes = 0
+        #to track time to get all rotten
         count=0
+        #we only want to perform DFS on oranges that have rotten just previously
         rows = len(grid)
         columns = len(grid[0])
         neighbors = [(0,1),(0,-1),(1,0),(-1,0)]
@@ -17,7 +21,6 @@ class Solution:
                 if grid[i][j]==1:
                     fresh+=1
         while len(q)!=0:
-            freshFound = False
             iterations = count
             count = 0
             for c in range(iterations): #to check iteration all rotten oranges
@@ -30,8 +33,7 @@ class Solution:
                         grid[x][y]=2
                         rotten +=1
                         count+=1
-                        freshFound = True
-            if freshFound: #checking if there was any fresh in neighbors
+            if count>0: #checking if there was any fresh in neighbors
                 minutes+=1
         if fresh == rotten:
             return minutes
