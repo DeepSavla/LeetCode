@@ -1,21 +1,37 @@
 class Solution:
     def isHappy(self, n: int) -> bool:
-        resSet = set()
-        res=0
-        while res !=1:
-            res = self.findSquareSum(n)
-            CurLen = len(resSet)
-            resSet.add(res)
-            n=res
-            if CurLen == len(resSet):
+        def sumOfSqOfDigits(n):
+            sum = 0
+            while n>0:
+                d = n%10
+                sum = sum + (d*d)
+                n=n//10
+            return sum
+        
+        s = set()
+        s.add(n)
+        while 1:
+            n = sumOfSqOfDigits(n)
+            if n==1:
+                return True
+            if n in s:
                 return False
-        return True
+            else:
+                s.add(n)
+                
             
-            
-    def findSquareSum(self,number):
-        sum=0
-        while number>=1:
-            dig = number%10
-            sum = sum + (dig*dig)
-            number = number//10
-        return sum
+        
+                
+        
+        
+        
+        
+'''
+- initialize a set
+- add n to set
+- while true:
+    - n = calculate the sum of squares of n
+    - if n in set: 
+        - return false  #coz this will happen infinitely
+    - if it is 1 return true
+'''
