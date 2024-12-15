@@ -3,19 +3,15 @@ class Solution:
         """
         Do not return anything, modify matrix in-place instead.
         """
-        targetCells = deque()
-        rows=len(matrix)
-        columns = len(matrix[0])
-        for i in range(rows):
-            for j in range(columns):
+        rows = set()
+        cols = set()
+        for i in range(len(matrix)):
+            for j in range(len(matrix[0])):
                 if matrix[i][j]==0:
-                    targetCells.append([i,j])
-        while len(targetCells)!=0:
-            curCell =  targetCells.popleft()
-            for i in range(rows):
-                matrix[i][curCell[1]] = 0
-            for j in range(columns):
-                matrix[curCell[0]][j] = 0
-        
-                    
-        
+                    rows.add(i)
+                    cols.add(j)
+        for i in range(len(matrix)):
+            for j in range(len(matrix[0])):
+                if i in rows or j in cols:
+                    matrix[i][j] =0
+        return matrix
