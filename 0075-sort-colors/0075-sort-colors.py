@@ -3,15 +3,22 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        hm ={0:0,1:0,2:0}
-        for n in nums:
-            hm[n] +=1
-        for i in range(len(nums)):
-            if i<hm[0]:
-                nums[i] = 0
-            elif i<hm[0]+hm[1]:
-                nums[i] = 1
-            else:
-                nums[i] = 2
+        def swap(i,j):
+            temp = nums[i]
+            nums[i] = nums[j]
+            nums[j] = temp
             
-                
+        l = 0 #for 0 swap positions
+        r = len(nums) -1 #for 2 swap positions
+        i = 0 #for iterating
+        while i<=r:
+            if nums[i] == 0:
+                swap(i,l)
+                l +=1
+                i+=1
+            elif nums[i]==2:
+                swap(i,r)
+                r-=1
+            else:
+                i+=1
+        return nums
