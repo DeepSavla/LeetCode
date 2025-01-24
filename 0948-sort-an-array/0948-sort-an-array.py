@@ -5,10 +5,13 @@ class Solution:
             if len(nums)<=1:
                 return nums
             mid = len(nums)//2
-            leftHalf = merge(nums[:mid])
-            rightHalf = merge(nums[mid:])
+            leftHalf = nums[:mid]
+            rightHalf = nums[mid:]
 
-            return mergesort(leftHalf, rightHalf)
+            leftArray = merge(leftHalf)
+            rightArray = merge(rightHalf)
+
+            return mergesort(leftArray, rightArray)
 
         def mergesort(leftArray, rightArray):
             #conquer
