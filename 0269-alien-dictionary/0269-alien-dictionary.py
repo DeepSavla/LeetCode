@@ -27,7 +27,7 @@ class Solution:
         visit = {}  # False = visited, True = currently visiting (cycle detection)
         res = []  # List to store the topological order of characters
 
-        # Helper function for Depth-First Search (DFS)
+        # Helper function for Depth-First Search (DFS) i.e. post-order DFS
         def dfs(c):
             if c in visit:  # If already visited
                 return visit[c]  # Return whether it is currently visiting (detect cycle)
