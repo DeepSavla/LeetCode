@@ -24,7 +24,7 @@ class Solution:
                     break  # Stop further comparisons after the first difference
 
         # Dictionary to track visitation state of each character
-        visit = {}  # False = visited, True = currently path (cycle detection), not present: not yet visited
+        visit = {}  # False = visited, True = currently path (cycle found), not present: not yet visited
         res = []  # List to store the topological order of characters
 
         # Helper function for Depth-First Search (DFS) i.e. post-order DFS
@@ -32,12 +32,12 @@ class Solution:
             if c in visit:  # If already visited
                 return visit[c]  # Return whether it is currently visiting (detect cycle)
 
-            visit[c] = True  # Mark as currently visiting
+            visit[c] = True  # Mark as currently visiting. if found true then cycle
             for n in adj[c]:  # Traverse all neighbors
                 if dfs(n):  # If a cycle is detected in the neighbor
                     return True
 
-            visit[c] = False  # Mark as fully visited
+            visit[c] = False  # Mark as fully visited (not in current path)
             res.append(c)  # Add character to result after processing all neighbors
 
         # Perform DFS for each character in the adjacency list
