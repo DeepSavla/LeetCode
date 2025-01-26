@@ -24,7 +24,7 @@ class Solution:
                     break  # Stop further comparisons after the first difference
 
         # Dictionary to track visitation state of each character
-        visit = {}  # False = visited, True = currently visiting (cycle detection)
+        visit = {}  # False = visited, True = currently path (cycle detection), not present: not yet visited
         res = []  # List to store the topological order of characters
 
         # Helper function for Depth-First Search (DFS) i.e. post-order DFS
