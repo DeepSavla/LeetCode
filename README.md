@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0015-3sum](https://github.com/DeepSavla/LeetCode/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/DeepSavla/LeetCode/tree/master/0075-sort-colors) |
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
 | [0912-random-pick-with-weight](https://github.com/DeepSavla/LeetCode/tree/master/0912-random-pick-with-weight) |
@@ -39,10 +40,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/DeepSavla/LeetCode/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/DeepSavla/LeetCode/tree/master/0075-sort-colors) |
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/DeepSavla/LeetCode/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/DeepSavla/LeetCode/tree/master/0075-sort-colors) |
 | [0948-sort-an-array](https://github.com/DeepSavla/LeetCode/tree/master/0948-sort-an-array) |
 ## Divide and Conquer
