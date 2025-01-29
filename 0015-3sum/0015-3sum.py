@@ -16,5 +16,4 @@ class Solution:
                     k=k-1
                 else:
                     j=j+1
-        res=list(res)
-        return res
+        return list(res)
