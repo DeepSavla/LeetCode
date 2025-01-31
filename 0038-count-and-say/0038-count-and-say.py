@@ -14,6 +14,3 @@ class Solution:
                     count = 0   
             curStr = newStr
         return curStr
-                
-            
-        
