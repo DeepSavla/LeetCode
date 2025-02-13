@@ -14,7 +14,6 @@ class Solution:
                     c = j + d[1]
                     if r in range(rows) and c in range(cols) and (board[r][c]== 1 or board[r][c]== -1):
                         liveNeighbourCell +=1
-                print(liveNeighbourCell)
                 if liveNeighbourCell < 2 and board[i][j]==1:
                     board[i][j] = -1    # for live that have died
                 elif liveNeighbourCell > 3 and board[i][j]==1:
