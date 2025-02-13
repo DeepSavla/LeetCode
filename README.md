@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0075-sort-colors](https://github.com/DeepSavla/LeetCode/tree/master/0075-sort-colors) |
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/DeepSavla/LeetCode/tree/master/0271-encode-and-decode-strings) |
+| [0289-game-of-life](https://github.com/DeepSavla/LeetCode/tree/master/0289-game-of-life) |
 | [0912-random-pick-with-weight](https://github.com/DeepSavla/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [0948-sort-an-array](https://github.com/DeepSavla/LeetCode/tree/master/0948-sort-an-array) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/DeepSavla/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
@@ -104,4 +105,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/DeepSavla/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
+## Matrix
+|  |
+| ------- |
+| [0289-game-of-life](https://github.com/DeepSavla/LeetCode/tree/master/0289-game-of-life) |
+## Simulation
+|  |
+| ------- |
+| [0289-game-of-life](https://github.com/DeepSavla/LeetCode/tree/master/0289-game-of-life) |
 <!---LeetCode Topics End-->
