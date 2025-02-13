@@ -21,6 +21,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 |  |
 | ------- |
+| [0374-guess-number-higher-or-lower](https://github.com/DeepSavla/LeetCode/tree/master/0374-guess-number-higher-or-lower) |
 | [0912-random-pick-with-weight](https://github.com/DeepSavla/LeetCode/tree/master/0912-random-pick-with-weight) |
 ## Prefix Sum
 |  |
@@ -113,4 +114,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0289-game-of-life](https://github.com/DeepSavla/LeetCode/tree/master/0289-game-of-life) |
+## Interactive
+|  |
+| ------- |
+| [0374-guess-number-higher-or-lower](https://github.com/DeepSavla/LeetCode/tree/master/0374-guess-number-higher-or-lower) |
 <!---LeetCode Topics End-->
