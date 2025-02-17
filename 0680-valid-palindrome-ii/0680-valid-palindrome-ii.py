@@ -1,19 +1,21 @@
 class Solution:
-    def validPalindrome(self, s: str) -> bool:
-        def checkPalindrome(l,r, isOneDeleted):
-            while l < r:
-                if s[l] != s[r]:
-                    if isOneDeleted == True:
-                        return False
-                    else:
-                        isOneDeleted = True
-                        return checkPalindrome(l+1,r, isOneDeleted) or checkPalindrome(l,r-1, isOneDeleted)
+    def validPalindrome(self, s: str) -> bool:     
+        i = 0 
+        j = len(s) - 1
+        
+        def checkPalindrome(i, j):
+            while i <= j:
+                if s[i] == s[j]:
+                    i += 1
+                    j -= 1
                 else:
-                    l+=1
-                    r-=1
-            return True
-
-        isOneDeleted = False
-        l = 0
-        r = len(s)-1
-        return checkPalindrome(l, r, isOneDeleted)
+                    return False 
+            return True 
+        
+        while i <= j:
+            if s[i] == s[j]:
+                i += 1
+                j -= 1
+            else:
+                return checkPalindrome(i, j-1) or checkPalindrome(i+1, j)
+        return True
