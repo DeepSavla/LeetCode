@@ -40,6 +40,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0038-count-and-say](https://github.com/DeepSavla/LeetCode/tree/master/0038-count-and-say) |
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/DeepSavla/LeetCode/tree/master/0271-encode-and-decode-strings) |
+| [0680-valid-palindrome-ii](https://github.com/DeepSavla/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/DeepSavla/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
 ## String Matching
 |  |
@@ -50,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0015-3sum](https://github.com/DeepSavla/LeetCode/tree/master/0015-3sum) |
 | [0075-sort-colors](https://github.com/DeepSavla/LeetCode/tree/master/0075-sort-colors) |
+| [0680-valid-palindrome-ii](https://github.com/DeepSavla/LeetCode/tree/master/0680-valid-palindrome-ii) |
 ## Sorting
 |  |
 | ------- |
@@ -129,6 +131,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/DeepSavla/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0680-valid-palindrome-ii](https://github.com/DeepSavla/LeetCode/tree/master/0680-valid-palindrome-ii) |
 ## Stack
 |  |
 | ------- |
