@@ -12,6 +12,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/DeepSavla/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0289-game-of-life](https://github.com/DeepSavla/LeetCode/tree/master/0289-game-of-life) |
+| [0542-01-matrix](https://github.com/DeepSavla/LeetCode/tree/master/0542-01-matrix) |
 | [0735-asteroid-collision](https://github.com/DeepSavla/LeetCode/tree/master/0735-asteroid-collision) |
 | [0912-random-pick-with-weight](https://github.com/DeepSavla/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [0948-sort-an-array](https://github.com/DeepSavla/LeetCode/tree/master/0948-sort-an-array) |
@@ -90,6 +91,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
+| [0542-01-matrix](https://github.com/DeepSavla/LeetCode/tree/master/0542-01-matrix) |
 ## Graph
 |  |
 | ------- |
@@ -114,6 +116,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0289-game-of-life](https://github.com/DeepSavla/LeetCode/tree/master/0289-game-of-life) |
+| [0542-01-matrix](https://github.com/DeepSavla/LeetCode/tree/master/0542-01-matrix) |
 ## Simulation
 |  |
 | ------- |
@@ -127,6 +130,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/DeepSavla/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0542-01-matrix](https://github.com/DeepSavla/LeetCode/tree/master/0542-01-matrix) |
 ## Greedy
 |  |
 | ------- |
