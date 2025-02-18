@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0075-sort-colors](https://github.com/DeepSavla/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/DeepSavla/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/DeepSavla/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0219-contains-duplicate-ii](https://github.com/DeepSavla/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/DeepSavla/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0289-game-of-life](https://github.com/DeepSavla/LeetCode/tree/master/0289-game-of-life) |
@@ -116,6 +117,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/DeepSavla/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0219-contains-duplicate-ii](https://github.com/DeepSavla/LeetCode/tree/master/0219-contains-duplicate-ii) |
 ## Backtracking
 |  |
 | ------- |
@@ -151,4 +153,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0735-asteroid-collision](https://github.com/DeepSavla/LeetCode/tree/master/0735-asteroid-collision) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/DeepSavla/LeetCode/tree/master/2456-construct-smallest-number-from-di-string) |
+## Sliding Window
+|  |
+| ------- |
+| [0219-contains-duplicate-ii](https://github.com/DeepSavla/LeetCode/tree/master/0219-contains-duplicate-ii) |
 <!---LeetCode Topics End-->
