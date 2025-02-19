@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0271-encode-and-decode-strings](https://github.com/DeepSavla/LeetCode/tree/master/0271-encode-and-decode-strings) |
 | [0289-game-of-life](https://github.com/DeepSavla/LeetCode/tree/master/0289-game-of-life) |
 | [0542-01-matrix](https://github.com/DeepSavla/LeetCode/tree/master/0542-01-matrix) |
+| [0621-task-scheduler](https://github.com/DeepSavla/LeetCode/tree/master/0621-task-scheduler) |
 | [0735-asteroid-collision](https://github.com/DeepSavla/LeetCode/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/DeepSavla/LeetCode/tree/master/0739-daily-temperatures) |
 | [0912-random-pick-with-weight](https://github.com/DeepSavla/LeetCode/tree/master/0912-random-pick-with-weight) |
@@ -71,6 +72,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0049-group-anagrams](https://github.com/DeepSavla/LeetCode/tree/master/0049-group-anagrams) |
 | [0075-sort-colors](https://github.com/DeepSavla/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/DeepSavla/LeetCode/tree/master/0088-merge-sorted-array) |
+| [0621-task-scheduler](https://github.com/DeepSavla/LeetCode/tree/master/0621-task-scheduler) |
 | [0948-sort-an-array](https://github.com/DeepSavla/LeetCode/tree/master/0948-sort-an-array) |
 ## Divide and Conquer
 |  |
@@ -79,6 +81,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0621-task-scheduler](https://github.com/DeepSavla/LeetCode/tree/master/0621-task-scheduler) |
 | [0948-sort-an-array](https://github.com/DeepSavla/LeetCode/tree/master/0948-sort-an-array) |
 ## Merge Sort
 |  |
@@ -95,6 +98,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Counting Sort
 |  |
 | ------- |
+| [0621-task-scheduler](https://github.com/DeepSavla/LeetCode/tree/master/0621-task-scheduler) |
 | [0948-sort-an-array](https://github.com/DeepSavla/LeetCode/tree/master/0948-sort-an-array) |
 ## Depth-First Search
 |  |
@@ -123,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0017-letter-combinations-of-a-phone-number](https://github.com/DeepSavla/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0049-group-anagrams](https://github.com/DeepSavla/LeetCode/tree/master/0049-group-anagrams) |
 | [0219-contains-duplicate-ii](https://github.com/DeepSavla/LeetCode/tree/master/0219-contains-duplicate-ii) |
+| [0621-task-scheduler](https://github.com/DeepSavla/LeetCode/tree/master/0621-task-scheduler) |
 ## Backtracking
 |  |
 | ------- |
@@ -151,6 +156,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/DeepSavla/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
+| [0621-task-scheduler](https://github.com/DeepSavla/LeetCode/tree/master/0621-task-scheduler) |
 | [0680-valid-palindrome-ii](https://github.com/DeepSavla/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/DeepSavla/LeetCode/tree/master/2456-construct-smallest-number-from-di-string) |
 ## Stack
