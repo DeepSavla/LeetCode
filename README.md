@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0289-game-of-life](https://github.com/DeepSavla/LeetCode/tree/master/0289-game-of-life) |
 | [0542-01-matrix](https://github.com/DeepSavla/LeetCode/tree/master/0542-01-matrix) |
 | [0735-asteroid-collision](https://github.com/DeepSavla/LeetCode/tree/master/0735-asteroid-collision) |
+| [0739-daily-temperatures](https://github.com/DeepSavla/LeetCode/tree/master/0739-daily-temperatures) |
 | [0912-random-pick-with-weight](https://github.com/DeepSavla/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [0948-sort-an-array](https://github.com/DeepSavla/LeetCode/tree/master/0948-sort-an-array) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/DeepSavla/LeetCode/tree/master/2292-counting-words-with-a-given-prefix) |
@@ -156,9 +157,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0735-asteroid-collision](https://github.com/DeepSavla/LeetCode/tree/master/0735-asteroid-collision) |
+| [0739-daily-temperatures](https://github.com/DeepSavla/LeetCode/tree/master/0739-daily-temperatures) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/DeepSavla/LeetCode/tree/master/2456-construct-smallest-number-from-di-string) |
 ## Sliding Window
 |  |
 | ------- |
 | [0219-contains-duplicate-ii](https://github.com/DeepSavla/LeetCode/tree/master/0219-contains-duplicate-ii) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0739-daily-temperatures](https://github.com/DeepSavla/LeetCode/tree/master/0739-daily-temperatures) |
 <!---LeetCode Topics End-->
