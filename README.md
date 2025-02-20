@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0015-3sum](https://github.com/DeepSavla/LeetCode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/DeepSavla/LeetCode/tree/master/0049-group-anagrams) |
+| [0057-insert-interval](https://github.com/DeepSavla/LeetCode/tree/master/0057-insert-interval) |
 | [0075-sort-colors](https://github.com/DeepSavla/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/DeepSavla/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/DeepSavla/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
