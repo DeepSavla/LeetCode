@@ -12,7 +12,6 @@ class Solution:
             subarr.append(candidates[i])
             backtrack(i+1,subarr)
             subarr.pop()
-            total = total-candidates[i]
             while i<len(candidates)-1 and candidates[i]==candidates[i+1]:
                 i+=1
             backtrack(i+1,subarr)
