@@ -106,19 +106,23 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/DeepSavla/LeetCode/tree/master/0207-course-schedule) |
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/DeepSavla/LeetCode/tree/master/0207-course-schedule) |
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
 | [0542-01-matrix](https://github.com/DeepSavla/LeetCode/tree/master/0542-01-matrix) |
 ## Graph
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/DeepSavla/LeetCode/tree/master/0207-course-schedule) |
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
 ## Topological Sort
 |  |
 | ------- |
+| [0207-course-schedule](https://github.com/DeepSavla/LeetCode/tree/master/0207-course-schedule) |
 | [0269-alien-dictionary](https://github.com/DeepSavla/LeetCode/tree/master/0269-alien-dictionary) |
 ## Design
 |  |
